@@ -1,24 +1,117 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
 header {
-  background: #003366;
-  color: white;
-  text-align: center;
+  background-color: #222;
+  color: #fff;
   padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
   list-style: none;
-  background: #0055a5;
-  padding: 10px;
 }
 
 nav ul li {
+  display: inline-block;
   margin: 0 15px;
 }
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Seções */
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+/* Projetos */
+#projetos ul {
+  list-style: none;
+}
+
+#projetos li {
+  background: #e0f7fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0097a7;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
