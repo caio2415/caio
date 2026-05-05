@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* Cabeçalho e menu */
 header {
   background-color: #222;
   color: #fff;
@@ -55,12 +55,12 @@ section h2 {
   color: #00bcd4;
 }
 
-/* Projetos */
-#projetos ul {
+/* Lista de projetos */
+ul {
   list-style: none;
 }
 
-#projetos li {
+ul li {
   background: #e0f7fa;
   margin: 10px 0;
   padding: 10px;
@@ -78,7 +78,7 @@ form label {
   margin: 10px 0 5px;
 }
 
-form input {
+form input, form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -107,11 +107,10 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsivo */
+/* Responsividade */
 @media (max-width: 600px) {
   nav ul li {
     display: block;
     margin: 10px 0;
   }
 }
-
